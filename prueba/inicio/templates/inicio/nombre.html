@@ -1,0 +1,30 @@
+{% extends "inicio/encabezado.html" %}
+
+{% block titulo %} NOMBRE {% endblock %}
+
+{% block imagen %}
+    {% load static %}
+    {% static 'inicio/images/nombre.png' %}
+{% endblock %}
+
+{% block titulo_menu %}
+    Brandon <span>DSM</span>
+{% endblock %}
+
+{% block seccion_activa %}/ Brandon{% endblock %}
+
+{% block encabezado %}
+    <div class="page-header">
+        <div class="page-title">
+            <h3>Desarrollador <small>Información del alumno</small></h3>
+        </div>
+    </div>
+{% endblock %}
+
+{% block contenido %}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="text-center" style="margin: 40px 0; color: #333;">Brandon Omar Pineda Gómez</h1>
+        </div>
+    </div>
+{% endblock %}
