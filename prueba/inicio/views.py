@@ -1,0 +1,22 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+menu="""
+
+"""
+
+# Create your views here.
+def principal(request):
+   return render(request, "inicio/principal.html")
+
+def nombre(request):
+    return render(request, "inicio/nombre.html")
+
+def contacto(request):
+    return render(request, "inicio/contacto.html")
+
+def formulario(request):
+    return render(request, "inicio/formulario.html")
+
+def ejemplo(request):
+    return render(request, "inicio/ejemplo.html")

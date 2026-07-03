@@ -1,0 +1,47 @@
+{% extends 'inicio/encabezado.html' %}
+
+{% block titulo %} PRINCIPAL {% endblock %}
+
+{% block imagen %}
+    {% load static %}{% static 'inicio/images/home.png' %}
+{% endblock %}
+
+{% block titulo_menu %}
+    Principal <span>DSM</span>
+{% endblock %}
+
+{% block seccion_activa %}{% endblock %}
+
+{% block encabezado %}
+{% endblock %}
+
+{% block contenido %}
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Matrícula</th>
+                <th>Nombre</th>
+                <th>Carrera</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for alumno in alumnos %}
+            <tr>
+                <td class="text-center">
+                    {% if alumno.image %}
+                        <img src="{{ alumno.image.url }}" alt="Foto de alumno" class="img-media" /> 
+                    {% else %}
+                        <span class="text-muted">Sin foto</span>
+                    {% endif %}
+                </td>
+                <td class="text-semibold">{{ alumno.matricula }}</td>
+                <td class="muted">{{ alumno.nombre }}</td>
+                <td class="muted">{{ alumno.carrera }}</td>
+                <td class="muted">{{ alumno.turno }}</td>   
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
