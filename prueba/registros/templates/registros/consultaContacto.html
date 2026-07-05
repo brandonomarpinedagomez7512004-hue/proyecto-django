@@ -1,0 +1,45 @@
+{% extends 'inicio/encabezado.html' %}
+
+{% block titulo %} COMENTARIOS {% endblock %}
+
+{% block imagen %}
+    {% load static %}
+    {% static 'inicio/images/contacto.png' %}
+{% endblock %}
+
+{% block titulo_menu %}
+    Comentarios <span>DSM</span>
+{% endblock %}
+
+{% block seccion_activa %}/ consultarComentario{% endblock %}
+
+{% block encabezado %}
+    <div class="page-header">
+        <div class="page-title">
+            <h3>Comentarios <small>Lista de Comentarios</small></h3>
+        </div>
+    </div>
+{% endblock %}
+
+{% block contenido %}
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Mensaje</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for comentario in comentarios %}
+            <tr>
+                <td class="text-semibold">{{ comentario.usuario }}</td>
+                <td class="muted">{{ comentario.mensaje }}</td>
+                <td>Editar</td>
+                <td>Eliminar</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
