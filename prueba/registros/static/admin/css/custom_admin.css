@@ -1,0 +1,39 @@
+#header {
+    background: #4a1942;
+    color: #fff;
+}
+
+#header a:link,
+#header a:visited {
+    color: #fff;
+}
+
+div.breadcrumbs {
+    background: #6b2a5e;
+    color: #fff;
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+    background: #4a1942;
+}
+
+a:link,
+a:visited {
+    color: #4a1942;
+}
+
+.button,
+input[type=submit],
+input[type=button],
+.submit-row input,
+a.button {
+    background: #4a1942;
+}
+
+.button:hover,
+input[type=submit]:hover,
+input[type=button]:hover {
+    background: #6b2a5e;
+}

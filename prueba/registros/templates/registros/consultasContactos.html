@@ -1,6 +1,6 @@
 {% extends 'inicio/encabezado.html' %}
 
-{% block titulo %} COMENTARIOS {% endblock %}
+{% block titulo %} CONSULTAS COMENTARIOS {% endblock %}
 
 {% block imagen %}
     {% load static %}
@@ -8,17 +8,12 @@
 {% endblock %}
 
 {% block titulo_menu %}
-    Comentarios <span>DSM</span>
+    Consultas <span>DSM</span>
 {% endblock %}
 
-{% block seccion_activa %}/ consultarComentario{% endblock %}
+{% block seccion_activa %}{% endblock %}
 
 {% block encabezado %}
-    <div class="page-header">
-        <div class="page-title">
-            <h3>Comentarios <small>Lista de Comentarios</small></h3>
-        </div>
-    </div>
 {% endblock %}
 
 {% block contenido %}
@@ -27,8 +22,7 @@
             <tr>
                 <th>Usuario</th>
                 <th>Mensaje</th>
-                <th></th>
-                <th></th>
+                <th>Registrado</th>
             </tr>
         </thead>
         <tbody>
@@ -36,12 +30,7 @@
             <tr>
                 <td class="text-semibold">{{ comentario.usuario }}</td>
                 <td class="muted">{{ comentario.mensaje }}</td>
-                <td class="text-center"> 
-                    <a href="{% url 'Editar' comentario.id %}">Editar</a>
-                </td>
-                <td class="text-center">
-                    <a href="{% url 'Eliminar' comentario.id %}">Eliminar</a>
-                </td>
+                <td class="muted">{{ comentario.created }}</td>
             </tr>
             {% endfor %}
         </tbody>

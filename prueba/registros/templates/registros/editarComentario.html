@@ -1,0 +1,40 @@
+{% extends 'inicio/encabezado.html' %}
+
+{% block titulo %} EDITAR {% endblock %}
+
+{% block imagen %}
+    {% load static %}
+    {% static 'inicio/images/home.png' %}
+{% endblock %}
+
+{% block titulo_menu %}
+    Editar <span>DSM</span>
+{% endblock %}
+
+{% block seccion_activa %}/ consultarComentario{% endblock %}
+
+{% block encabezado %}
+    <!--Encabezdo -->
+    <div class="page-header">
+        <div class="page-title">
+            <h3>EDITAR COMENTARIO</h3>
+        </div>
+    </div>
+    <!-- /Encabezado-->
+{% endblock %}
+
+{% block contenido %}
+<form method="POST">
+    {% csrf_token %}
+    <p>
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario">
+    </p>
+    <p>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+    </p>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a href="{% url 'ConsultarComentario' %}" class="btn btn-default">Cancelar</a>
+</form>
+{% endblock %}

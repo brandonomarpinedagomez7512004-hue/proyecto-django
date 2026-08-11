@@ -8,7 +8,7 @@ class Alumnos(models.Model):  # define la estructura de nuestra tabla
     carrera = models.TextField()
     turno = models.CharField(max_length=10)
     created = models.DateTimeField(auto_now_add=True)  # fecha y tiempo
-    updatep = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)  # Se cambió 'updatep' por 'updated' y usa auto_now=True para actualizaciones
     image = models.ImageField(null=True, upload_to="fotos", verbose_name="Fotografía")
 
     class Meta:
@@ -49,3 +49,19 @@ class ComentarioContacto(models.Model):
     def __str__(self):
         return self.mensaje
         # Indica que se mostrará el mensaje como valor en la tabla
+
+class Archivos(models.Model):
+    id = models.AutoField(primary_key=True)
+    titulo = models.CharField(max_length=100)
+    descripcion = models.TextField(null=True, blank=True)
+    archivo = models.FileField(upload_to="archivos", null=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Archivo"
+        verbose_name_plural = "Archivos"
+        ordering = ["-created"]
+
+    def __str__(self):
+        return self.titulo
