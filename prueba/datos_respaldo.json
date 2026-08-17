@@ -1,0 +1,321 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "usuarios",
+    "permissions": [
+      [
+        "add_alumnos",
+        "registros",
+        "alumnos"
+      ],
+      [
+        "change_alumnos",
+        "registros",
+        "alumnos"
+      ],
+      [
+        "add_comentariocontacto",
+        "registros",
+        "comentariocontacto"
+      ],
+      [
+        "change_comentariocontacto",
+        "registros",
+        "comentariocontacto"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "Editores_Eliminadores",
+    "permissions": [
+      [
+        "change_alumnos",
+        "registros",
+        "alumnos"
+      ],
+      [
+        "delete_alumnos",
+        "registros",
+        "alumnos"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$jMot1BsbDjZgMxYjLLG2D1$NLabTSAVDpoS1jao4yQEpjpyso5kDG6u7foHywgXygE=",
+    "last_login": "2026-08-10T01:32:48.806Z",
+    "is_superuser": true,
+    "username": "brandon",
+    "first_name": "",
+    "last_name": "",
+    "email": "brandonomarpinedagomez7512004@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-06-15T16:16:50.388Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$cDSdFb42UgB6HLfp0BHKGc$QEpVF7s/dUC5qOPOYZu/GIwM8h0D8sijhGk55csRdng=",
+    "last_login": "2026-07-07T18:38:17.070Z",
+    "is_superuser": false,
+    "username": "usuario_editor",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-07-07T18:28:09Z",
+    "groups": [
+      [
+        "Editores_Eliminadores"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$ZEtTQBkzjSSZ8GyKHpSiAQ$fDAHu9366Lqr286Go9vCn02ZfIddwlvNfpRXtyXGaqg=",
+    "last_login": "2026-07-07T18:45:21Z",
+    "is_superuser": false,
+    "username": "usuario_alta",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-07-07T18:35:17Z",
+    "groups": [
+      [
+        "usuarios"
+      ]
+    ],
+    "user_permissions": [
+      [
+        "add_alumnos",
+        "registros",
+        "alumnos"
+      ]
+    ]
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1ha3jskjwf4mjaep5yc7ebuvd9ryr02m",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0NYQAs9evcNhF22UjWQlPZk_Ltp0oNeZybzhpi2tcStyxLnDCMgnH4ZJX5K3UV-pHpviltdl5nUnqjDdnVrWV7Xo_0blNQLjMDTZIwMGMRb56wOhl1CQdJEnoTIOYcBjSAZHyh7HTgPl4CEVjKf4fMF5Hw39A:1wtEsi:qsxTUhbMwFywq7LqAJ7umeAo2ywwK6ecIIVPM8P6mLw",
+    "expire_date": "2026-08-24T01:32:48.811Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cz7jglo6u6rtlk343r9idzoq2dl15q9x",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0NYQAs9evcNhF22UjWQlPZk_Ltp0oNeZybzhpi2tcStyxLnDCMgnH4ZJX5K3UV-pHpviltdl5nUnqjDdnVrWV7Xo_0blNQLjMDTZIwMGMRb56wOhl1CQdJEnoTIOYcBjSAZHyh7HTgPl4CEVjKf4fMF5Hw39A:1wcmz3:8fKAJUstQIWLrV0KRHSr9oZ2JV78Td3MHGGbwbx5uGs",
+    "expire_date": "2026-07-09T16:31:21.339Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gthj1e1luik7zfhuk01zlghf6el88xym",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0NYQAs9evcNhF22UjWQlPZk_Ltp0oNeZybzhpi2tcStyxLnDCMgnH4ZJX5K3UV-pHpviltdl5nUnqjDdnVrWV7Xo_0blNQLjMDTZIwMGMRb56wOhl1CQdJEnoTIOYcBjSAZHyh7HTgPl4CEVjKf4fMF5Hw39A:1wachJ:U6O99HIenFvOltvd05wO4fuFaEgQarxeEMihOaEWGzA",
+    "expire_date": "2026-07-03T17:08:05.534Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "izfe5vm5krtre9pr6328oi9cq2tkngg0",
+  "fields": {
+    "session_data": ".eJxVjMsKwjAQAP9lzxK65Lk9evcbyiabmKok0MdJ_Hcp9KDXmWHeMPG-1Wlf8zLNAiNouPyyyOmZ2yHkwe3eVeptW-aojkSddlW3Lvl1Pdu_QeW1wgg8iGabonZGChUKln0Rgzng4Jy1NuhgMhKheMcUM6EvPmHh5DQFhM8X46g3lw:1whAnJ:Q6V0_5Ytcu7-qGudXeGiZunAml2-quzp53ryxddmXhc",
+    "expire_date": "2026-07-21T18:45:21.829Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l3didqvxo1jgvmasma4q7iba1zf7kpw3",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0NYQAs9evcNhF22UjWQlPZk_Ltp0oNeZybzhpi2tcStyxLnDCMgnH4ZJX5K3UV-pHpviltdl5nUnqjDdnVrWV7Xo_0blNQLjMDTZIwMGMRb56wOhl1CQdJEnoTIOYcBjSAZHyh7HTgPl4CEVjKf4fMF5Hw39A:1wZA0p:lJ_8ZgrD9bbCiyhLZubdBIy9Qw0viyC7sEKapRRBX4w",
+    "expire_date": "2026-06-29T16:18:11.024Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mblip1eqxgezmk18vxb17brb4jvws2jy",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0NYQAs9evcNhF22UjWQlPZk_Ltp0oNeZybzhpi2tcStyxLnDCMgnH4ZJX5K3UV-pHpviltdl5nUnqjDdnVrWV7Xo_0blNQLjMDTZIwMGMRb56wOhl1CQdJEnoTIOYcBjSAZHyh7HTgPl4CEVjKf4fMF5Hw39A:1wfK4x:_2tU3KvANOSmARp26jfrTYX5wmv_W1OUzLO4sLg6XLg",
+    "expire_date": "2026-07-16T16:15:55.980Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "un5qmj8gdyc76wbp17o2hr34ginlha49",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0NYQAs9evcNhF22UjWQlPZk_Ltp0oNeZybzhpi2tcStyxLnDCMgnH4ZJX5K3UV-pHpviltdl5nUnqjDdnVrWV7Xo_0blNQLjMDTZIwMGMRb56wOhl1CQdJEnoTIOYcBjSAZHyh7HTgPl4CEVjKf4fMF5Hw39A:1wiEDZ:zrgjtL4B_jf22xuOF8kS_sjTC1iTV5lHMRq7c3dMOCM",
+    "expire_date": "2026-07-24T16:36:49.215Z"
+  }
+},
+{
+  "model": "registros.alumnos",
+  "pk": 1,
+  "fields": {
+    "matricula": "UTM221028TI",
+    "nombre": "Brandon Omar Pineda Gómez",
+    "carrera": "Tecnologias de la Informacion",
+    "turno": "Matutino",
+    "created": "2026-06-15T16:23:39.585Z",
+    "updated": "2026-07-07T16:38:06.280Z",
+    "image": "fotos/yo.jpg"
+  }
+},
+{
+  "model": "registros.alumnos",
+  "pk": 2,
+  "fields": {
+    "matricula": "UTM140218TI",
+    "nombre": "BOMMER",
+    "carrera": "TECNOLOGOIAS DE LA INFORMACION",
+    "turno": "MATUTINO",
+    "created": "2026-06-23T18:04:37.852Z",
+    "updated": "2026-07-07T16:38:06.280Z",
+    "image": "fotos/descarga_R86JjFG.jpg"
+  }
+},
+{
+  "model": "registros.alumnos",
+  "pk": 3,
+  "fields": {
+    "matricula": "UTM7785TI",
+    "nombre": "Monica",
+    "carrera": "TI",
+    "turno": "Vespertino",
+    "created": "2026-08-03T16:09:26.766Z",
+    "updated": "2026-08-03T16:09:26.766Z",
+    "image": "fotos/la_babosa_de_AYDIN.png"
+  }
+},
+{
+  "model": "registros.alumnos",
+  "pk": 4,
+  "fields": {
+    "matricula": "UTM1234",
+    "nombre": "Juan",
+    "carrera": "TI",
+    "turno": "Matutino",
+    "created": "2026-08-03T16:13:02.624Z",
+    "updated": "2026-08-03T16:13:02.624Z",
+    "image": "fotos/c5d8029a9a3048027025333df1dfddc0.webp"
+  }
+},
+{
+  "model": "registros.alumnos",
+  "pk": 5,
+  "fields": {
+    "matricula": "utm2",
+    "nombre": "Ana",
+    "carrera": "BIO",
+    "turno": "Vespertino",
+    "created": "2026-08-03T16:14:16.354Z",
+    "updated": "2026-08-03T16:14:16.354Z",
+    "image": "fotos/f9f594cade6be57d77d2a0e4f1b8bf5f.webp"
+  }
+},
+{
+  "model": "registros.alumnos",
+  "pk": 6,
+  "fields": {
+    "matricula": "UTM1234TIC",
+    "nombre": "Juan",
+    "carrera": "TI",
+    "turno": "Matutino",
+    "created": "2026-08-03T16:15:13.479Z",
+    "updated": "2026-08-03T16:15:13.480Z",
+    "image": "fotos/c89612c15369c1cc798294d4c93aae0e.webp"
+  }
+},
+{
+  "model": "registros.comentario",
+  "pk": 2,
+  "fields": {
+    "alumno": 1,
+    "created": "2026-06-25T16:46:57.869Z",
+    "coment": "jksjkjd"
+  }
+},
+{
+  "model": "registros.comentariocontacto",
+  "pk": 2,
+  "fields": {
+    "usuario": "brandon",
+    "mensaje": "hi",
+    "created": "2026-07-10T17:19:48.983Z"
+  }
+},
+{
+  "model": "registros.comentariocontacto",
+  "pk": 3,
+  "fields": {
+    "usuario": "jair",
+    "mensaje": "ajaja",
+    "created": "2026-07-10T17:20:14.525Z"
+  }
+},
+{
+  "model": "registros.comentariocontacto",
+  "pk": 4,
+  "fields": {
+    "usuario": "brandon",
+    "mensaje": "Hola, quiero información",
+    "created": "2026-08-06T01:37:59.883Z"
+  }
+},
+{
+  "model": "registros.comentariocontacto",
+  "pk": 5,
+  "fields": {
+    "usuario": "brandon",
+    "mensaje": "Excelente servicio, gracias",
+    "created": "2026-08-06T01:38:19.226Z"
+  }
+},
+{
+  "model": "registros.comentariocontacto",
+  "pk": 6,
+  "fields": {
+    "usuario": "jair",
+    "mensaje": "No pude registrarme bien",
+    "created": "2026-08-06T01:38:55.717Z"
+  }
+},
+{
+  "model": "registros.comentariocontacto",
+  "pk": 7,
+  "fields": {
+    "usuario": "monica",
+    "mensaje": "Buenas tardes, tengo una duda",
+    "created": "2026-08-06T01:39:28.604Z"
+  }
+},
+{
+  "model": "registros.archivos",
+  "pk": 1,
+  "fields": {
+    "titulo": "esta wea toda rara",
+    "descripcion": "un archivo ",
+    "archivo": "archivos/Consultas_-_Continuación.pdf",
+    "created": "2026-08-06T16:59:45.828Z",
+    "updated": "2026-08-06T16:59:45.828Z"
+  }
+}
+]
